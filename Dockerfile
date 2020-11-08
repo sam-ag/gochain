@@ -1,4 +1,4 @@
-FROM goland AS builder
+FROM golang:1.13.4 AS builder
 
 COPY app.go .
 RUN go get -d -v \ 
